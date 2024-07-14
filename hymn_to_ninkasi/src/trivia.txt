@@ -1,0 +1,59 @@
+1; Il primo film d'animazione di Walt Disney, "Biancaneve e i sette nani", e' stato rilasciato nel 1940?; FALSO; VERO
+
+2; Il personaggio di "Superman" e' stato creato negli anni '50?; FALSO; VERO
+
+3; La band "Spice Girls" ha debuttato con la canzone "Wannabe"?; VERO; FALSO
+
+4; La caduta dell'Impero Romano d'Occidente e' avvenuta nel 476 d.C.?; VERO; FALSO
+
+5; La statua della Liberta' e' stata un regalo della Francia agli Stati Uniti?; VERO; FALSO  
+
+6; Il latte di mucca e' naturalmente rosa?; FALSO; VERO
+
+7; In Dragon Ball Z, Bulma e' la madre di Trunks?; VERO; FALSO
+
+8; La Grande Muraglia Cinese e' visibile dallo spazio?; FALSO; VERO
+
+9; L'orso polare ha una pelle nera sotto il pelo bianco?; VERO; FALSO
+
+10; In Pokemon, il Pikachu di Ash si evolve in Raichu?; FALSO; VERO
+
+11; In che anno e' stata fondata Apple Inc.?; 1976; 1980
+
+12; Qual e' il numero atomico dell'ossigeno?; 8; 6
+
+13; Chi ha scritto il romanzo "Il vecchio e il mare"?; Ernest Hemingway; F. Scott Fitzgerald
+
+14; In quale periodo storico e' ambientato il romanzo "Guerra e Pace" di Tolstoj?; Guerre napoleoniche; Rivoluzione Francese
+
+15; Chi e' stato il famoso pirata e corsaro che ha operato nel Mar dei Caraibi durante il XVII secolo?; Henry Morgan; Barbascura
+
+16; Chi e' stato il filosofo francese noto per le sue teorie politiche durante il periodo della Rivoluzione francese?; Maximilien Robespierre; Voltaire
+
+17; Quale movimento artistico ha influenzato profondamente Frida Kahlo?; Surrealismo; Cubismo
+
+18; Quale film ha visto Madonna recitare nel ruolo principale nel 1996?; Evita; The Next Best Thing
+
+19; Qual e' il nome completo di Britney Spears?; Britney Jean Spears; Britney Anne Spears
+
+20; Quale canzone di Michael Jackson ha vinto il Grammy Award for Record of the Year nel 1984?; Billie Jean; Beat It
+
+21; Chi e' stata l'attrice protagonista del film "Colazione da Tiffany"?; Audrey Hepburn; Marilyn Monroe
+
+22; Qual era il nome dell'orso di peluche piu' famoso degli anni '80, creato nel 1902?; Teddy; Benny
+
+23; Quale famosa serie di cartoni animati e' stata creata da Hanna-Barbera e ha debuttato nel 1960?; I Flinstones; I Puffi
+
+24; Qual e' stato il creatore del personaggio di Snoopy, apparso per la prima volta nel 1950?; Charles Shulz; Walt Disney
+
+25; Stando a un'indagine condotta il 13/09/1998, qual e' la percentuale di persone che hanno fatto scorte alimentari perché preoccupati delle conseguenze del Millennium Bug?; 26%; 69%
+
+26; Qual e' stato il primo browser web grafico, lanciato nel 1993?; Mosaic; Internet Explorer
+
+27; Qual e' stato il primo virus informatico a diffondersi su larga scala, nel 1988?; Morris Worm; Christmas Tree EXEC
+
+28; Qual e' stato il nome della conferenza internazionale del 1992 che ha affrontato le questioni sul cambiamento climatico?; Conferenza di Rio (Earth Summit); Conferenza di Kyoto
+
+29; Qual e' il mammifero piu' grande del pianeta?; Balena blu; Elefante africano
+
+30; Qual e' il nome dell'arma finale di Cloud Strife in Final Fantasy VII, che appare come un'enorme spada a doppia lama?; Ultima Weapon; Ragnarok

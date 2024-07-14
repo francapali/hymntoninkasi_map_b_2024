@@ -1,0 +1,1194 @@
+2024-06-22 13:24:26.491594+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.initializeDatabase(DatabaseConfig.java:41)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:43)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:24:26.500105+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.populateDatabase(DatabaseConfig.java:76)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:47)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:24:26.508127+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:55)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:24:26.514634+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:56)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:24:26.522645+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:118)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:24:26.528655+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:120)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:24:26.535166+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:122)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:24:26.541166+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:123)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:24:26.547177+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:124)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:24:26.552686+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:125)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:24:26.559195+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:126)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:24:26.565705+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinRoom(NinObjectDAO.java:106)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:129)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:24:26.571712+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinRoom(NinObjectDAO.java:106)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:131)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:26:15.342265+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.initializeDatabase(DatabaseConfig.java:41)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:43)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:26:15.352286+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.populateDatabase(DatabaseConfig.java:76)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:47)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:26:15.359300+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:55)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:26:15.366309+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:56)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:26:15.374818+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:118)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:26:15.381329+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:120)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:26:15.387898+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:122)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:26:15.393898+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:123)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:26:15.399908+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:124)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:26:15.406427+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:125)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:26:15.412925+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinObject(NinObjectDAO.java:62)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:126)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-06-22 13:26:15.418941+02:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.getConnection(DatabaseConfig.java:34)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinRoom(NinObjectDAO.java:106)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:129)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Michele/Desktop/GitHub/Hymn-to-Ninkasi/hymn_to_ninkasi/resources/db.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-07-03 12:38:55.396406+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "look" not found [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinRoom(NinObjectDAO.java:117)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:131)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+2024-07-03 12:38:55.608582+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "look" not found [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at ninteam_map_b.hymn_to_ninkasi.dao.NinObjectDAO.getNinRoom(NinObjectDAO.java:117)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:133)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:90)
+2024-07-08 16:15:17.526960+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a\000d\000aINSERT INTO NinObjectTable(id, name, description, alias, pickupable, throwable, readable, usable, openable, lockable, open, read, relatedObjects) VALUES\000d\000a(150, 'La Polaroid', '""Sono tanti i ricordi che riaffiorano alla vista di questa istantanea datata 28 Maggio 1990.\000d\000aEra il Memorial Day, quasi dieci anni fa, tutte e quattro sorridenti, ingenue e pronte all''avventura.\000d\000aForse quello del college è stato l''unico periodo in cui siete state realmente felici insieme.\000d\000aEravate in pausa dalle lezioni, i problemi più grandi erano i capelli in un''umida giornata estiva e gli\000d\000ainviti che non arrivavano dalle congregazioni più in voga del campus, eravate spensierate e non lo credevate.\000d\000aProvi un senso di nostalgia, dove sono finiti quei giorni? Quelle ragazze dove si sono perse?\000d\000aNon ricordi di avere rullini ancora da sviluppare eppure non hai neanche una foto a casa che vi ritragga al\000d\000acompleto come in questo caso. Sei sempre stata il collante delle ragazze e ne sei consapevole.""', ""foto""\000d\000a[*]FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, null)"; expected "(, ., [, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+
+
+INSERT INTO NinObjectTable(id, name, description, alias, pickupable, throwable, readable, usable, openable, lockable, open, read, relatedObjects) VALUES
+(150, 'La Polaroid', '"Sono tanti i ricordi che riaffiorano alla vista di questa istantanea datata 28 Maggio 1990.
+Era il Memorial Day, quasi dieci anni fa, tutte e quattro sorridenti, ingenue e pronte all''avventura.
+Forse quello del college è stato l''unico periodo in cui siete state realmente felici insieme.
+Eravate in pausa dalle lezioni, i problemi più grandi erano i capelli in un''umida giornata estiva e gli
+inviti che non arrivavano dalle congregazioni più in voga del campus, eravate spensierate e non lo credevate.
+Provi un senso di nostalgia, dove sono finiti quei giorni? Quelle ragazze dove si sono perse?
+Non ricordi di avere rullini ancora da sviluppare eppure non hai neanche una foto a casa che vi ritragga al
+completo come in questo caso. Sei sempre stata il collante delle ragazze e ne sei consapevole."', "foto"
+FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, null) [42001-224]
+2024-07-08 16:20:30.509939+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a\000d\000aINSERT INTO NinObjectTable(id, name, description, alias, pickupable, throwable, readable, usable, openable, lockable, open, read, relatedObjects) VALUES\000d\000a(150, 'polaroid', '""Sono tanti i ricordi che riaffiorano alla vista di questa istantanea datata 28 Maggio 1990.\000d\000aEra il Memorial Day, quasi dieci anni fa, tutte e quattro sorridenti, ingenue e pronte all''avventura.\000d\000aForse quello del college è stato l''unico periodo in cui siete state realmente felici insieme.\000d\000aEravate in pausa dalle lezioni, i problemi più grandi erano i capelli in un''umida giornata estiva e gli\000d\000ainviti che non arrivavano dalle congregazioni più in voga del campus, eravate spensierate e non lo credevate.\000d\000aProvi un senso di nostalgia, dove sono finiti quei giorni? Quelle ragazze dove si sono perse?\000d\000aNon ricordi di avere rullini ancora da sviluppare eppure non hai neanche una foto a casa che vi ritragga al\000d\000acompleto come in questo caso. Sei sempre stata il collante delle ragazze e ne sei consapevole.""', ""foto""\000d\000a[*]FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, NULL)"; expected "(, ., [, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+
+
+INSERT INTO NinObjectTable(id, name, description, alias, pickupable, throwable, readable, usable, openable, lockable, open, read, relatedObjects) VALUES
+(150, 'polaroid', '"Sono tanti i ricordi che riaffiorano alla vista di questa istantanea datata 28 Maggio 1990.
+Era il Memorial Day, quasi dieci anni fa, tutte e quattro sorridenti, ingenue e pronte all''avventura.
+Forse quello del college è stato l''unico periodo in cui siete state realmente felici insieme.
+Eravate in pausa dalle lezioni, i problemi più grandi erano i capelli in un''umida giornata estiva e gli
+inviti che non arrivavano dalle congregazioni più in voga del campus, eravate spensierate e non lo credevate.
+Provi un senso di nostalgia, dove sono finiti quei giorni? Quelle ragazze dove si sono perse?
+Non ricordi di avere rullini ancora da sviluppare eppure non hai neanche una foto a casa che vi ritragga al
+completo come in questo caso. Sei sempre stata il collante delle ragazze e ne sei consapevole."', "foto"
+FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, NULL) [42001-224]
+2024-07-08 16:22:37.866734+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "foto" not found; SQL statement:
+INSERT INTO NinObjectTable(id, name, description, alias, pickupable, throwable, readable, usable, openable, lockable, open, read, relatedObjects) VALUES
+(150, 'polaroid', '"Sono tanti i ricordi che riaffiorano alla vista di questa istantanea datata 28 Maggio 1990.
+Era il Memorial Day, quasi dieci anni fa, tutte e quattro sorridenti, ingenue e pronte all''avventura.
+Forse quello del college è stato l''unico periodo in cui siete state realmente felici insieme.
+Eravate in pausa dalle lezioni, i problemi più grandi erano i capelli in un''umida giornata estiva e gli
+inviti che non arrivavano dalle congregazioni più in voga del campus, eravate spensierate e non lo credevate.
+Provi un senso di nostalgia, dove sono finiti quei giorni? Quelle ragazze dove si sono perse?
+Non ricordi di avere rullini ancora da sviluppare eppure non hai neanche una foto a casa che vi ritragga al
+completo come in questo caso. Sei sempre stata il collante delle ragazze e ne sei consapevole."', "foto",
+FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, NULL) [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.dml.Insert.doPrepare(Insert.java:300)
+	at org.h2.command.dml.DataChangeStatement.prepare(DataChangeStatement.java:37)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.tools.RunScript.execute(RunScript.java:169)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.populateDatabase(DatabaseConfig.java:99)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:60)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.ui.HTN_InterfacciaGioco.mainComponents(HTN_InterfacciaGioco.java:97)
+	at ninteam_map_b.hymn_to_ninkasi.ui.HTN_InterfacciaGioco.<init>(HTN_InterfacciaGioco.java:72)
+	at ninteam_map_b.hymn_to_ninkasi.ui.HTN_InterfacciaInizio$6.actionPerformed(HTN_InterfacciaInizio.java:176)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2024-07-08 16:24:29.057423+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "foto" not found; SQL statement:
+INSERT INTO NinObjectTable(id, name, description, alias, pickupable, throwable, readable, usable, openable, lockable, open, read, relatedObjects) VALUES
+(150, 'polaroid', '"Sono tanti i ricordi che riaffiorano alla vista di questa istantanea datata 28 Maggio 1990.
+Era il Memorial Day, quasi dieci anni fa, tutte e quattro sorridenti, ingenue e pronte all''avventura.
+Forse quello del college è stato l''unico periodo in cui siete state realmente felici insieme.
+Eravate in pausa dalle lezioni, i problemi più grandi erano i capelli in un''umida giornata estiva e gli
+inviti che non arrivavano dalle congregazioni più in voga del campus, eravate spensierate e non lo credevate.
+Provi un senso di nostalgia, dove sono finiti quei giorni? Quelle ragazze dove si sono perse?
+Non ricordi di avere rullini ancora da sviluppare eppure non hai neanche una foto a casa che vi ritragga al
+completo come in questo caso. Sei sempre stata il collante delle ragazze e ne sei consapevole."', "foto",
+FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, NULL) [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.dml.Insert.doPrepare(Insert.java:300)
+	at org.h2.command.dml.DataChangeStatement.prepare(DataChangeStatement.java:37)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.tools.RunScript.execute(RunScript.java:169)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.populateDatabase(DatabaseConfig.java:99)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:60)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.ui.HTN_InterfacciaGioco.mainComponents(HTN_InterfacciaGioco.java:97)
+	at ninteam_map_b.hymn_to_ninkasi.ui.HTN_InterfacciaGioco.<init>(HTN_InterfacciaGioco.java:72)
+	at ninteam_map_b.hymn_to_ninkasi.ui.HTN_InterfacciaInizio$6.actionPerformed(HTN_InterfacciaInizio.java:176)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2024-07-08 16:26:20.773334+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO NinObjectTable(id, name, description, alias, pickupable, throwable, readable, usable, openable, lockable, open, read, relatedObjects) VALUES
+(150, 'polaroid', '"Sono tanti i ricordi che riaffiorano alla vista di questa istantanea datata 28 Maggio 1990.
+Era il Memorial Day, quasi dieci anni fa, tutte e quattro sorridenti, ingenue e pronte all''avventura.
+Forse quello del college è stato l''unico periodo in cui siete state realmente felici insieme.
+Eravate in pausa dalle lezioni, i problemi più grandi erano i capelli in un''umida giornata estiva e gli
+inviti che non arrivavano dalle congregazioni più in voga del campus, eravate spensierate e non lo credevate.
+Provi un senso di nostalgia, dove sono finiti quei giorni? Quelle ragazze dove si sono perse?
+Non ricordi di avere rullini ancora da sviluppare eppure non hai neanche una foto a casa che vi ritragga al
+completo come in questo caso. Sei sempre stata il collante delle ragazze e ne sei consapevole."',
+FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, NULL) [21002-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.command.dml.Insert.doPrepare(Insert.java:295)
+	at org.h2.command.dml.DataChangeStatement.prepare(DataChangeStatement.java:37)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.tools.RunScript.execute(RunScript.java:169)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.populateDatabase(DatabaseConfig.java:99)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:60)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.ui.HTN_InterfacciaGioco.mainComponents(HTN_InterfacciaGioco.java:97)
+	at ninteam_map_b.hymn_to_ninkasi.ui.HTN_InterfacciaGioco.<init>(HTN_InterfacciaGioco.java:72)
+	at ninteam_map_b.hymn_to_ninkasi.ui.HTN_InterfacciaInizio$6.actionPerformed(HTN_InterfacciaInizio.java:176)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2024-07-08 16:28:07.512456+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a\000d\000aINSERT INTO NinObjectTable(id, name, description, alias, pickupable, throwable, readable, usable, openable, lockable, open, read, relatedObjects) VALUES\000d\000a(150, 'polaroid', '""Sono tanti i ricordi che riaffiorano alla vista di questa istantanea datata 28 Maggio 1990.\000d\000aEra il Memorial Day, quasi dieci anni fa, tutte e quattro sorridenti, ingenue e pronte all''avventura.\000d\000aForse quello del college è stato l''unico periodo in cui siete state realmente felici insieme.\000d\000aEravate in pausa dalle lezioni, i problemi più grandi erano i capelli in un''umida giornata estiva e gli\000d\000ainviti che non arrivavano dalle congregazioni più in voga del campus, eravate spensierate e non lo credevate.\000d\000aProvi un senso di nostalgia, dove sono finiti quei giorni? Quelle ragazze dove si sono perse?\000d\000aNon ricordi di avere rullini ancora da sviluppare eppure non hai neanche una foto a casa che vi ritragga al\000d\000acompleto come in questo caso. Sei sempre stata il collante delle ragazze e ne sei consapevole.""', 'foto'\000d\000a[*]FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, NULL)"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+
+
+INSERT INTO NinObjectTable(id, name, description, alias, pickupable, throwable, readable, usable, openable, lockable, open, read, relatedObjects) VALUES
+(150, 'polaroid', '"Sono tanti i ricordi che riaffiorano alla vista di questa istantanea datata 28 Maggio 1990.
+Era il Memorial Day, quasi dieci anni fa, tutte e quattro sorridenti, ingenue e pronte all''avventura.
+Forse quello del college è stato l''unico periodo in cui siete state realmente felici insieme.
+Eravate in pausa dalle lezioni, i problemi più grandi erano i capelli in un''umida giornata estiva e gli
+inviti che non arrivavano dalle congregazioni più in voga del campus, eravate spensierate e non lo credevate.
+Provi un senso di nostalgia, dove sono finiti quei giorni? Quelle ragazze dove si sono perse?
+Non ricordi di avere rullini ancora da sviluppare eppure non hai neanche una foto a casa che vi ritragga al
+completo come in questo caso. Sei sempre stata il collante delle ragazze e ne sei consapevole."', 'foto'
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, NULL) [42001-224]
+2024-07-09 19:33:49.443744+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "USER_CHOICE" not found; SQL statement:
+
+
+
+INSERT INTO NinDialogueTable(id, title, text, choice1, choice2, user_choice1, user_choice) VALUES
+(340, 'Gin per chiave', 'Vedi Gin intenta a salutare delle persone sulla porta d''ingresso. La fermi un attimo per parlare.
+Gin:-"Dimmi tutto, posso esserti d''aiuto?"', '"Avrei bisogno della chiave del bagno...la natura chiama"', '"La porta del bagno e'' chiusa a chiave, se avessi un passpourtout mi aiuteresti tanto"', 341, 341) [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1190)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1175)
+	at org.h2.command.Parser.parseInsert(Parser.java:1549)
+	at org.h2.command.Parser.parsePrepared(Parser.java:719)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.tools.RunScript.execute(RunScript.java:169)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.populateDatabase(DatabaseConfig.java:99)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:60)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:86)
+2024-07-09 19:35:34.139725+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "USER_CHOICE" not found; SQL statement:
+
+
+
+INSERT INTO NinDialogueTable(id, title, text, choice1, choice2, user_choice1, user_choice) VALUES
+(340, 'Gin per chiave', 'Vedi Gin intenta a salutare delle persone sulla porta d''ingresso. La fermi un attimo per parlare.
+Gin:-"Dimmi tutto, posso esserti d''aiuto?"', '"Avrei bisogno della chiave del bagno...la natura chiama"', '"La porta del bagno e'' chiusa a chiave, se avessi un passpourtout mi aiuteresti tanto"', 341, 341) [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1190)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1175)
+	at org.h2.command.Parser.parseInsert(Parser.java:1549)
+	at org.h2.command.Parser.parsePrepared(Parser.java:719)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.tools.RunScript.execute(RunScript.java:169)
+	at ninteam_map_b.hymn_to_ninkasi.config.DatabaseConfig.populateDatabase(DatabaseConfig.java:99)
+	at ninteam_map_b.hymn_to_ninkasi.Hymn_To_Ninkasi.init(Hymn_To_Ninkasi.java:60)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.<init>(Engine.java:35)
+	at ninteam_map_b.hymn_to_ninkasi.Engine.main(Engine.java:86)
+2024-07-11 19:57:17.732571+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "William Tinella\000d\000awilliamtinella\000d\000aOnline\000d\000aPshyke, Piske, fidia\000d\000a\000d\000aPiske [*]— 09/07/2024 17:29\000d\000aImmagine\000d\000aHai una chiamata senza risposta da \000d\000afidia\000d\000a della durata di 4 minuti.\000d\000a — Ieri alle 12:53\000d\000aPiske — Ieri alle 14:24\000d\000aok ora ci sono\000d\000aHai una chiamata senza risposta da \000d\000afidia\000d\000a della durata di 2 ore.\000d\000a — Ieri alle 14:31\000d\000afidia — Ieri alle 15:22\000d\000a/**\000d\000a * HTN_InterfacciaGioco.java\000d\000a */\000d\000apackage ninteam_map_b.hymn_to_ninkasi.ui"; SQL statement:
+William Tinella
+williamtinella
+Online
+Pshyke, Piske, fidia
+
+Piske — 09/07/2024 17:29
+Immagine
+Hai una chiamata senza risposta da 
+fidia
+ della durata di 4 minuti.
+ — Ieri alle 12:53
+Piske — Ieri alle 14:24
+ok ora ci sono
+Hai una chiamata senza risposta da 
+fidia
+ della durata di 2 ore.
+ — Ieri alle 14:31
+fidia — Ieri alle 15:22
+/**
+ * HTN_InterfacciaGioco.java
+ */
+package ninteam_map_b.hymn_to_ninkasi.ui [42000-224]
+2024-07-11 19:59:56.041516+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "William Tinella\000d\000awilliamtinella\000d\000aOnline\000d\000aPshyke, Piske, fidia\000d\000a\000d\000aPiske [*]— 09/07/2024 17:29\000d\000aImmagine\000d\000aHai una chiamata senza risposta da \000d\000afidia\000d\000a della durata di 4 minuti.\000d\000a — Ieri alle 12:53\000d\000aPiske — Ieri alle 14:24\000d\000aok ora ci sono\000d\000aHai una chiamata senza risposta da \000d\000afidia\000d\000a della durata di 2 ore.\000d\000a — Ieri alle 14:31\000d\000afidia — Ieri alle 15:22\000d\000a/**\000d\000a * HTN_InterfacciaGioco.java\000d\000a */\000d\000apackage ninteam_map_b.hymn_to_ninkasi.ui"; SQL statement:
+William Tinella
+williamtinella
+Online
+Pshyke, Piske, fidia
+
+Piske — 09/07/2024 17:29
+Immagine
+Hai una chiamata senza risposta da 
+fidia
+ della durata di 4 minuti.
+ — Ieri alle 12:53
+Piske — Ieri alle 14:24
+ok ora ci sono
+Hai una chiamata senza risposta da 
+fidia
+ della durata di 2 ore.
+ — Ieri alle 14:31
+fidia — Ieri alle 15:22
+/**
+ * HTN_InterfacciaGioco.java
+ */
+package ninteam_map_b.hymn_to_ninkasi.ui [42000-224]

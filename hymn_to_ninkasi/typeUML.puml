@@ -1,0 +1,49 @@
+@startuml
+annotation java.lang.Override
+class java.io.BufferedReader
+class java.io.File
+class java.io.FileReader
+class java.io.IOException
+class java.util.ArrayList
+class java.util.Arrays
+class java.util.HashSet
+class java.util.List
+class java.util.Objects
+class java.util.Set
+class ninteam_map_b.hymn_to_ninkasi.dialogue.DialogGraph
+class ninteam_map_b.hymn_to_ninkasi.dialogue.NinDialogueNode
+class ninteam_map_b.hymn_to_ninkasi.type.Characters
+class ninteam_map_b.hymn_to_ninkasi.type.Command
+class ninteam_map_b.hymn_to_ninkasi.type.Inventory
+class ninteam_map_b.hymn_to_ninkasi.type.NinObject
+class ninteam_map_b.hymn_to_ninkasi.type.NinRoom
+class ninteam_map_b.hymn_to_ninkasi.type.Utils
+enum ninteam_map_b.hymn_to_ninkasi.type.CommandType
+ninteam_map_b.hymn_to_ninkasi.type.Characters ..> java.lang.Override
+ninteam_map_b.hymn_to_ninkasi.type.Characters ..> java.util.ArrayList
+ninteam_map_b.hymn_to_ninkasi.type.Characters ..> java.util.List
+ninteam_map_b.hymn_to_ninkasi.type.Characters ..> ninteam_map_b.hymn_to_ninkasi.dialogue.DialogGraph
+ninteam_map_b.hymn_to_ninkasi.type.Characters ..> ninteam_map_b.hymn_to_ninkasi.dialogue.NinDialogueNode
+ninteam_map_b.hymn_to_ninkasi.type.Command ..> java.lang.Override
+ninteam_map_b.hymn_to_ninkasi.type.Command ..> java.util.Arrays
+ninteam_map_b.hymn_to_ninkasi.type.Command ..> java.util.HashSet
+ninteam_map_b.hymn_to_ninkasi.type.Command ..> java.util.Objects
+ninteam_map_b.hymn_to_ninkasi.type.Command ..> java.util.Set
+ninteam_map_b.hymn_to_ninkasi.type.Inventory ..> java.util.ArrayList
+ninteam_map_b.hymn_to_ninkasi.type.Inventory ..> java.util.List
+ninteam_map_b.hymn_to_ninkasi.type.NinObject ..> java.lang.Override
+ninteam_map_b.hymn_to_ninkasi.type.NinObject ..> java.util.Arrays
+ninteam_map_b.hymn_to_ninkasi.type.NinObject ..> java.util.HashSet
+ninteam_map_b.hymn_to_ninkasi.type.NinObject ..> java.util.Set
+ninteam_map_b.hymn_to_ninkasi.type.NinRoom ..> java.lang.Override
+ninteam_map_b.hymn_to_ninkasi.type.NinRoom ..> java.util.ArrayList
+ninteam_map_b.hymn_to_ninkasi.type.NinRoom ..> java.util.List
+ninteam_map_b.hymn_to_ninkasi.type.Utils ..> java.io.BufferedReader
+ninteam_map_b.hymn_to_ninkasi.type.Utils ..> java.io.File
+ninteam_map_b.hymn_to_ninkasi.type.Utils ..> java.io.FileReader
+ninteam_map_b.hymn_to_ninkasi.type.Utils ..> java.io.IOException
+ninteam_map_b.hymn_to_ninkasi.type.Utils ..> java.util.ArrayList
+ninteam_map_b.hymn_to_ninkasi.type.Utils ..> java.util.HashSet
+ninteam_map_b.hymn_to_ninkasi.type.Utils ..> java.util.List
+ninteam_map_b.hymn_to_ninkasi.type.Utils ..> java.util.Set
+@enduml
