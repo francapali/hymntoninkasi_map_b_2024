@@ -38,8 +38,7 @@ _Hymn to Ninkasi_ è stato creato grazie a:
 Per iniziare a giocare, segui questi semplici passaggi:
 
 1. **Clona il Repository**: Esegui `git clone https://github.com/francapali/Hymn-to-Ninkasi.git`.
-2. **Installa le Dipendenze**: Esegui `npm install` per installare tutte le dipendenze necessarie.
-3. **Avvia il Gioco**: Esegui `npm start` e preparati per l'avventura!
+2. **Avvia il gioco dal tuo IDE**: ricordati di selezionare `HTN_InterfacciaGioco.java` come main class.
 
 ## 📞 Contatti
 
